@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5em 3em ;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navLink{
+    margin-left: 2em;    
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.myImg{
+   width: 50%;
+   height:50vh;
+  
+}
+img{
+    height: 94vh;
+    border-radius: 2rem;
+}
+.social{
+  
+    width: max-content;
+}
