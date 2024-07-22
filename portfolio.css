@@ -5,24 +5,35 @@
 body{
     background-image: linear-gradient(43deg, #000000 0%, #140707 46%, #250303 100%);
     color: white;
+    font: 14px sans-serif;
 }
 
 .nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
-    margin: 1em 3em ;
+    margin: 2em 3em ;
 }
 .navMenu{
-    height: 10px;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+    height: 22px;
+    width: 505px;
+   
 }
-a{  
+#menuBar{
+    display: none;
+}
+
+a{  height: 22px;
+    width: 88px;
     font-size: 19px;
     text-decoration: none;
     color: white;
 }
 a:hover{
-font-size: 20px;
+font-size: 19.5px;
 font-weight: 800;
 background-image: linear-gradient(47deg, #ffffff 0%, #e7a6a6 46%, #2f0505 100%);
 -webkit-background-clip: text;
@@ -35,7 +46,7 @@ color: transparent;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 92vh;
+    height: 87vh;
     margin-left: 3em;
 }
  .mainInfo{
@@ -45,34 +56,61 @@ color: transparent;
     width: 40vh;
  }
  .intro{
-    background-image: linear-gradient(43deg, #000000 0%, #140707 46%, #250303 100%);
+    border-left: 3px solid #ffffff;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    height: 13em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+     background-image: linear-gradient(43deg, #000000 0%, #140707 46%, #250303 100%);
+
+ }
+ .intro:hover{
+    background-image: none;
+    height: 13.1    em;
  }
  .cv{
-    background-image: linear-gradient(43deg, #000000 0%, #140707 46%, #4a0404 100%);
-    padding: 4px;
-    width: 8rem;
+    background-image: linear-gradient(43deg, #000000 0%, #410808 46%, #565515 100%);
+    padding: 5px 5px 5px 5px;
+    width: 6.5rem;
+    height: 19px;
+    font-size: 12px;
   }
   .cv:hover{
-    font-size: 16.5px;
+    font-size: 12.5px;
   }
  .myImg{
-    margin-top: 5vh;
     position: relative;
     right: 10vh;
- }
-img{
+    perspective: 100px;
     height: 80vh;
+    width: 349px;
     border-radius: 2rem;
     border: none;
-
+    background-image: url("Snigdha.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+ }
+.myImg:hover{
+    background-image: url("Snigdha2.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   position: sticky;
   top:90vh;
-  height: 17px;
+  height: 26px;
+  width: 122px;
 }
 
 ion-icon{
+    padding: 2px;
     height: 22px;
     width: 22px;
     margin-right: 10px;
@@ -86,8 +124,8 @@ ion-icon:hover{
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
 .facebook:hover{
-    background-color: #3e5cf3;
+    background-color: #3151ef;
 }
 .twitter:hover{
-    background-color: #3e5cf3;
+    background-color: #2748ed;
 }
