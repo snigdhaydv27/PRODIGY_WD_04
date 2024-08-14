@@ -6,6 +6,8 @@ body {
     background-image: linear-gradient(43deg, #000000 0%, #140707 46%, #250303 100%);
     color: white;
     font: 14px sans-serif;
+    overflow: hidden;
+    height: 100vh;
 }
 
 .userIcon {
@@ -26,9 +28,6 @@ body {
     justify-content: space-between;
     height: 22px;
     width: 505px;
-}
-#menuBar {
-    display: none;
 }
 
 a {
