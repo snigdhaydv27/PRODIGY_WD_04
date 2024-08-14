@@ -17,7 +17,7 @@ menuBarContainer.style.padding = "1em";
 menuBarContainer.innerHTML = `
     <a href="portfolio.html" class="navLink" id="Home" style ="font-size:22px; height:50px; margin-top:10px" >Home</a>
     <a href="about.html" class="navLink" id="About"style ="font-size:22px; height:50px">About</a>
-    <a href="#" class="navLink" id="Contact"style ="font-size:22px; height:50px; width:110px">Contact</a>
+    <a href="contact.html" class="navLink" id="Contact"style ="font-size:22px; height:50px; width:110px">Contact</a>
     <svg style="position:fixed; top:17px; right:15px"class="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="38" height="38" color="#ffffff" fill="none">
         <path d="M18 6L12 12M12 12L6 18M12 12L18 18M12 12L6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
     </svg>`;
@@ -40,3 +40,13 @@ menuBarContainer.querySelector(".cross").addEventListener("click", () => {
     threeBar.style.display = "block";
     isMenuOpen = false;
 });
+
+document.querySelector(".facebook").addEventListener("click", ()=>{
+    window.open("https://www.facebook.com/profile.php?id=100009824285138")
+})
+document.querySelector(".instagram").addEventListener("click", ()=>{
+    window.open("https://www.instagram.com/snigdha_ydv/")
+})
+document.querySelector(".linkedin").addEventListener("click", ()=>{
+    window.open("https://www.linkedin.com/in/snigdha-kumar-90445b298/")
+})

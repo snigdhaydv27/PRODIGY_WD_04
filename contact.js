@@ -1,16 +1,19 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const introText = "Hello! I'm a passionate web developer with a focus on creating responsive and user-friendly websites.";
-    document.getElementById('intro').innerText = introText;
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent form submission
+
+    // Get form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Display a response message
+    const responseMessage = document.getElementById('responseMessage');
+    responseMessage.innerText = `Thank you, ${name}! We have received your message and will get back to you at ${email}.`;
+
+    // Clear form fields
+    document.getElementById('contactForm').reset();
 });
 
-function showMore() {
-    const moreInfo = document.getElementById('more-info');
-    if (moreInfo.classList.contains('hidden')) {
-        moreInfo.classList.remove('hidden');
-    } else {
-        moreInfo.classList.add('hidden');
-    }
-}
 let threeBar = document.querySelector("#threeBar");
 let menuBarContainer = document.createElement("div");
 let isMenuOpen = false;
@@ -53,7 +56,6 @@ menuBarContainer.querySelector(".cross").addEventListener("click", () => {
     threeBar.style.display = "block";
     isMenuOpen = false;
 });
-
 document.querySelector(".facebook").addEventListener("click", ()=>{
     window.open("https://www.facebook.com/profile.php?id=100009824285138")
 })

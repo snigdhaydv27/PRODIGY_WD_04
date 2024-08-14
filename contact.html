@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Us - Portfolio</title>
+    <link rel="stylesheet" href="contact.css">
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+    <svg class="userIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+        fill="none">
+        <path
+            d="M6.57757 15.4816C5.1628 16.324 1.45336 18.0441 3.71266 20.1966C4.81631 21.248 6.04549 22 7.59087 22H16.4091C17.9545 22 19.1837 21.248 20.2873 20.1966C22.5466 18.0441 18.8372 16.324 17.4224 15.4816C14.1048 13.5061 9.89519 13.5061 6.57757 15.4816Z"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path
+            d="M16.5 6.5C16.5 8.98528 14.4853 11 12 11C9.51472 11 7.5 8.98528 7.5 6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5Z"
+            stroke="currentColor" stroke-width="1.5" />
+    </svg>
+    <ion-icon name="menu" class="navLink" id="threeBar"></ion-icon>
+    <div class="nav">
+        <div class="navMenu">
+            <a href="portfolio.html" class="navLink" id="Home">Home</a>
+            <a href="about.html" class="navLink" id="About">About</a>
+            <a href="contact.html" class="navLink" id="Contact">Contact</a>
+        </div>
+        <div class="main">
+            <div class="contact-container">
+                <h1>Contact Us</h1>
+                <p>If you have any questions or want to reach out, please fill out the form below:</p>
+        
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+        
+                    <button type="submit">Submit</button>
+                </form>
+        
+                <p id="responseMessage"></p>
+            </div>
+        </div>
+        <div class="social">
+            <ion-icon name="logo-facebook" class="facebook"></ion-icon>
+            <ion-icon name="logo-instagram" class="instagram"></ion-icon>
+            <ion-icon name="logo-twitter" class="twitter"></ion-icon>
+        </div>
+
+        <script src="contact.js"></script>
+</body>
+
+</html>
